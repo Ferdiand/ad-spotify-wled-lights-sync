@@ -1,11 +1,11 @@
 import contextlib
 import os
 from appdaemontestframework import automation_fixture
-from apps.spotify_mood_lights_sync.spotify_mood_lights_sync import SpotifyMoodLightsSync
+from apps.spotify_wled_lights_sync.spotify_wled_lights_sync import SpotifyWledLightsSync
 from test_utils import *
 
 
-@automation_fixture(SpotifyMoodLightsSync)
+@automation_fixture(SpotifyWledLightsSync)
 def uut(given_that):
     given_that.passed_arg('client_id').is_set_to("_")
     given_that.passed_arg('client_secret').is_set_to("_")

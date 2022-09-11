@@ -34,8 +34,8 @@ CENTERED_PROFILE = [
 ]
 
 
-class SpotifyMoodLightsSync(hass.Hass):
-    """SpotifyMoodLightsSync class."""
+class SpotifyWledLightsSync(hass.Hass):
+    """SpotifyWledLightsSync class."""
 
     def initialize(self) -> None:
         """Initialize the app and listen for media_player media_content_id changes."""
