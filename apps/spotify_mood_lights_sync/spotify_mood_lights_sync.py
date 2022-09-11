@@ -192,9 +192,12 @@ class SpotifyMoodLightsSync(hass.Hass):
 
         valence: float = track_features['valence']
         energy: float = track_features['energy']
+        tempo: float = track_features['tempo']
         color = self.color_for_point((valence, energy))
 
-        self.log(f"Got color {color} for valence {valence} and energy {energy} in track '{track_uri}'", level='DEBUG')
+        self.log(
+            f"Got color {color} for valence {valence} and energy {energy} with tempo {tempo} in track '{track_uri}'",
+            level='DEBUG')
 
         return color
 
